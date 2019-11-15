@@ -141,9 +141,9 @@ public class BattleshipView extends JFrame{
 	  {
 	      BattleshipController bsc = new BattleshipController();
 		  BattleshipView bsview = new BattleshipView();
-	   // BattleshipData bsdata = new BattleshipData();
-	   // bsc.setBattleshipData(bsdata);
-	    bsc.setBattleshipView(bsview);
+		  BattleshipData bsdata = new BattleshipData();
+		  bsc.setBattleshipData(bsdata);
+		  bsc.setBattleshipView(bsview);
 	    
 	    
 	  }
