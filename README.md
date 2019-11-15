@@ -24,6 +24,16 @@ Packages
    
 
   6. BattleshipServer - Runs on the Server Side. The rule checking for playing the game.
+  
+    a. battleshipGame -- Communicate between servers, handleMessageFromClient(), receive the Comm data object
+    
+    b. playGame -- Handle the Comm data object.
+    
+        * place ships initial
+        
+        * handle moves from players
+        
+        * game over
 
 
 
