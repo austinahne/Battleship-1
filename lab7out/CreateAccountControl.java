@@ -10,10 +10,19 @@ public class CreateAccountControl {
 	private JTextField passwconf;
 	private CreateAccountData capData;
 	
-	public CreateAccountControl() {}
+	public CreateAccountControl(JTextField usern,JTextField passw,JTextField passwconf) {
+		capData = new CreateAccountData();
+		this.usern=usern;
+		this.passw=passw;
+		this.passwconf=passwconf;
+		
+	}
 	
 	public void loginSubmit() {
-		capData = new CreateAccountData(usern.getText(),passw.getText(),passwconf.getText());
+		
+		capData.setUsername(usern.getText());
+		capData.setPassword(passw.getText());
+		capData.setPasswordConf(passwconf.getText());
 		
 		
 	}

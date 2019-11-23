@@ -37,7 +37,7 @@ public class CreateAccountPanel extends JFrame {
 		usern = new JTextField();
 		passw = new JTextField();
 		passwconf = new JTextField();
-		caControl= new CreateAccountControl();
+		caControl= new CreateAccountControl(usern,passw,passwconf);
 		caControl.setCAP(this);
 		caControl.setUN(usern);
 		caControl.setPW(passw);
@@ -90,7 +90,7 @@ public class CreateAccountPanel extends JFrame {
 	  
 	  public void actionPerformed(ActionEvent e) {
 	      if (e.getSource() == submit) {
-	        System.out.println("Login Button Pressed");
+	        System.out.println("Submit Button Pressed");
 	        caControl.loginSubmit();
 	      }
 	      else if(e.getSource() == cancel) {
